@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Leroy Merlin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+  <main class="login-box">
+
+    <section class="login-intro">
+      <div class="logo logo-lg"><span class="triangle"></span> LEROY MERLIN</div>
+      <h1>Tecnologia que te aproxima do que você precisa.</h1>
+      <p>Com o nosso sistema de inteligência artificial, você encontra os produtos que precisa,
+         localiza onde estão na loja e tem uma experiência de compra mais rápida, prática e personalizada.</p>
+      <div class="benefits">
+        <div><span><img src="img/pin.png" alt=""></span>Localize<br>produtos</div>
+        <div><span><img src="img/help.png" alt=""></span>Receba<br>sugestões</div>
+        <div><span><img src="img/timer.png" alt=""></span>Ganhe tempo<br>na sua compra</div>
+      </div>
+    </section>
+
+    <section class="login-form">
+      <h2>Acesse o sistema</h2>
+      <p class="sub">Entre com sua conta para continuar.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <span class="field-icon"><img src="img/user.png" alt=""></span>
+          <input type="text" id="user" placeholder="E-mail ou CPF" autocomplete="username">
+        </div>
+        <small class="error" id="userError"></small>
+
+        <div class="field">
+          <span class="field-icon"><img src="img/lock.jpg" alt=""></span>
+          <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
+          <button type="button" id="togglePass" class="eye" title="Mostrar senha" aria-label="Mostrar senha">👁️</button>
+        </div>
+        <small class="error" id="passError"></small>
+
+        <label class="remember"><input type="checkbox" id="remember"> Lembrar de mim</label>
+
+        <button type="submit" class="btn-login">Entrar →</button>
+
+        <a href="#" class="forgot" id="forgot">Esqueceu a sua senha?</a>
+
+        <div class="or"><span>ou</span></div>
+        <button type="button" class="btn-qr" id="qrBtn"><img src="img/code.png" alt=""> Acessar com QR Code da loja</button>
+        <a href="busca.html" class="back">← Voltar para a página inicial</a>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

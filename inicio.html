@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início - Leroy Merlin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo"><span class="triangle"></span> LEROY MERLIN</div>
+
+    <div class="search">
+      <img src="img/lupe.png" alt="Buscar" class="icon-search">
+      <input type="text" id="search" placeholder="O que você procura?">
+      <button id="clear" title="Limpar">✕</button>
+    </div>
+
+    <div class="store">
+      <img src="img/pin.png" alt="Loja" class="icon-light">
+      <div>Minha loja<br>
+        <select id="store">
+          <option>Selecione a loja</option>
+          <option>São Paulo - Marginal Tietê</option>
+          <option>São Paulo - Vila Leopoldina</option>
+          <option>Guarulhos</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="icons">
+      <img src="img/user.png" alt="Usuário" class="icon-light">
+      <div class="menu">
+        <button class="burger" id="menuBtn" title="Menu" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="menu-list" id="menuList" hidden>
+          <a href="busca.html">Busca de produtos</a>
+          <a href="sobre.html">Sobre</a>
+          <button type="button" id="logout">Sair</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div>
+      <h2>Sofisticação e conforto para seu lar</h2>
+      <p>Encontre os melhores produtos para transformar seus espaços.</p>
+      <a href="busca.html" class="btn-view">Ver produtos →</a>
+    </div>
+    <img src="img/sofa.jpg" alt="Sofá" class="banner-img">
+  </section>
+
+  <section class="featured">
+    <h3>Mais buscados</h3>
+    <div class="grid" id="featured"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

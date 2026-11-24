@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre o Projeto - Leroy Merlin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo"><span class="triangle"></span> LEROY MERLIN</div>
+
+    <div class="icons">
+      <img src="img/user.png" alt="Usuário" class="icon-light">
+      <div class="menu">
+        <button class="burger" id="menuBtn" title="Menu" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="menu-list" id="menuList" hidden>
+          <a href="inicio.html">Início</a>
+          <a href="busca.html">Busca de produtos</a>
+          <button type="button" id="logout">Sair</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="text">
+      <h1>Sobre o projeto</h1>
+      <h2>Mais tecnologia, mais praticidade para você.</h2>
+      <p>
+        O nosso projeto utiliza inteligência artificial para ajudar você a
+        encontrar os produtos que precisa nas lojas físicas da Leroy Merlin,
+        além de oferecer um sistema de autoatendimento com totens e um site
+        com QR Code para localização.
+      </p>
+
+      <div class="how">
+        <h3>Como funciona?</h3>
+        <ol>
+          <li>1. Escaneie o QR Code da loja ou acesse o site;</li>
+          <li>2. Busque o produto ou navegue por categorias;</li>
+          <li>3. Veja a localização exata do item na loja;</li>
+          <li>4. Aproveite uma experiência mais rápida e prática!</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="photo">
+      <div class="qr-panel">
+        Aponte a câmera e encontre o produto na loja
+        <div class="qr"></div>
+      </div>
+      <div class="phone">
+        <div class="screen">
+          <div class="pin"><img src="img/pin.png" alt="Localização"></div>
+          <div class="place">Localização do produto<br><b>Sofá 3 lugares</b><br>Rua 12 - Corredor B</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team">
+    <h3>Nossos integrantes</h3>
+    <div class="row">
+      <div class="member">
+        <div class="avatar">👨</div>
+        <b>Guilherme Guerreiro</b>
+        <small>Desenvolvedora Front-end</small>
+      </div>
+      <div class="member">
+        <div class="avatar">👨</div>
+        <b>Pedro Utida</b>
+        <small>Desenvolvedor Back-end</small>
+      </div>
+      <div class="member">
+        <div class="avatar">👨</div>
+        <b>João Lucas</b>
+        <small>UX/UI Design</small>
+      </div>
+      <div class="member">
+        <div class="avatar">👩</div>
+        <b>Júlia Inostroza</b>
+        <small>Gestão de Projeto</small>
+      </div>
+      <div class="together">
+        <span class="together-icon">👥</span>
+        <span>Juntos por uma experiência mais inteligente e prática na Leroy Merlin!</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

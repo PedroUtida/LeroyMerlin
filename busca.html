@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Busca - Leroy Merlin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo"><span class="triangle"></span> LEROY MERLIN</div>
+
+    <div class="search">
+      <img src="img/lupe.png" alt="Buscar" class="icon-search">
+      <input type="text" id="search" value="sofá" placeholder="O que você procura?">
+      <button id="clear" title="Limpar">✕</button>
+    </div>
+
+    <div class="store">
+      <img src="img/pin.png" alt="Loja" class="icon-light">
+      <div>Minha loja<br>
+        <select id="store">
+          <option>Selecione a loja</option>
+          <option>São Paulo - Marginal Tietê</option>
+          <option>São Paulo - Vila Leopoldina</option>
+          <option>Guarulhos</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="icons">
+      <img src="img/user.png" alt="Usuário" class="icon-light">
+      <div class="menu">
+        <button class="burger" id="menuBtn" title="Menu" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="menu-list" id="menuList" hidden>
+          <a href="inicio.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <button type="button" id="logout">Sair</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <aside class="filters">
+      <h3>Filtros</h3>
+
+      <h4>Categoria</h4>
+      <label><input type="checkbox" name="category" value="Sofás e Poltronas" checked> Sofás e Poltronas</label>
+      <label><input type="checkbox" name="category" value="Estofados"> Estofados</label>
+      <label><input type="checkbox" name="category" value="Decoração"> Decoração</label>
+      <label><input type="checkbox" name="category" value="Móveis"> Móveis</label>
+
+      <h4>Preço</h4>
+      <input type="range" id="price" min="500" max="3000" step="100" value="3000">
+      <div class="price-row"><span>R$ 500</span><span id="priceMax">R$ 3.000</span></div>
+
+      <h4>Cor</h4>
+      <div class="colors">
+        <span class="dot" data-color="bege" style="background:#e8d9c5"></span>
+        <span class="dot" data-color="rosa" style="background:#e6b9b0"></span>
+        <span class="dot" data-color="vermelho" style="background:#c0392b"></span>
+        <span class="dot" data-color="azul" style="background:#1f3a6e"></span>
+        <span class="dot" data-color="verde" style="background:#2e7d32"></span>
+        <span class="dot" data-color="cinza" style="background:#777"></span>
+      </div>
+
+      <h4>Tamanho</h4>
+      <label><input type="checkbox" name="size" value="2 lugares"> 2 lugares</label>
+      <label><input type="checkbox" name="size" value="3 lugares"> 3 lugares</label>
+      <label><input type="checkbox" name="size" value="4 lugares ou mais"> 4 lugares ou mais</label>
+    </aside>
+
+    <main class="results">
+      <div class="result-head">
+        <h3 id="resultTitle">Resultados para "sofá"</h3>
+        <select class="sort-select" id="sort">
+          <option value="relevance">Mais relevantes</option>
+          <option value="low">Menor preço</option>
+          <option value="high">Maior preço</option>
+        </select>
+      </div>
+
+      <div class="grid" id="grid"></div>
+
+      <div class="similar">
+        <h4>Produtos semelhantes</h4>
+        <div class="strip">
+          <button class="arrow" id="prev">‹</button>
+          <div class="strip" id="strip"></div>
+          <button class="arrow" id="next">›</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
